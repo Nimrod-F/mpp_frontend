@@ -29,7 +29,7 @@ const Detail = () => {
               </Typography>
             </Grid>
             <Grid item xs={10}>
-              <TextField disabled={true} value={dog?.owner} />
+              <TextField disabled={true} value={dog?.owner || ""} />
             </Grid>
             <Grid item xs={2}>
               <Typography variant="body1">
@@ -37,7 +37,7 @@ const Detail = () => {
               </Typography>
             </Grid>
             <Grid item xs={10}>
-              <TextField disabled={true} value={dog?.age}></TextField>
+              <TextField disabled={true} value={dog?.age || ""}></TextField>
             </Grid>
           </Grid>
         </Grid>
